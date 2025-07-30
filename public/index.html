@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Node.js App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .status {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
+        }
+        .endpoint {
+            background: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Node.js App</h1>
+        <div class="status">
+            <strong>Status:</strong> Running successfully!
+        </div>
+        
+        <h2>Available Endpoints:</h2>
+        <div class="endpoint">GET <a href="/health">/health</a> - Health check endpoint</div>
+        <div class="endpoint">GET <a href="/api/info">/api/info</a> - Application information</div>
+        
+        <h2>Features:</h2>
+        <ul>
+            <li>Express.js server</li>
+            <li>Docker support</li>
+            <li>Health check endpoint</li>
+            <li>Static file serving</li>
+        </ul>
+    </div>
+</body>
+</html>
